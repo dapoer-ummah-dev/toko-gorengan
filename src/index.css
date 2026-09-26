@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #331d0f;
+}
+
+::selection {
+  background-color: #f59e0b;
+  color: #331d0f;
+}
+
+/* Scrollbar tipis bernuansa hangat untuk drawer keranjang */
+.cart-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.cart-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cart-scroll::-webkit-scrollbar-thumb {
+  background-color: #dcb98f;
+  border-radius: 999px;
+}
